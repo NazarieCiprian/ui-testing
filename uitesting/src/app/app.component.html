@@ -1,0 +1,28 @@
+<div style="margin-bottom:5px;">
+    <label for="ID">ID</label>
+    <input id="studentId" type="text" #id name="ID">
+</div>
+<div style="margin-bottom:5px;">
+  <label for="Name">Name</label>
+  <input id="nameId" type="text" #name name="Name">
+</div>
+
+<div style="margin-bottom:5px;">
+    <label for="Email">Email</label>
+    <input id="emailId" type="text" #email name="Email">
+</div>
+<div style="margin-bottom:5px;">
+  <label for="Group">Group</label>
+    <input id="groupId" type="text" #group name="Group">
+</div>
+<div style="margin-bottom:5px;">
+  <label for="Tutor">Tutor</label>
+    <input id="tutorId" type="text" #tutor name="Tutor">
+</div>
+
+<button id="addStudentId" (click)="addStudent()">Add Student</button>
+<button id="getStudentId" (click)="getStudent()">Get Student</button>
+
+<div>
+  <li *ngFor="let student of students">{{student | toString }}</li>
+</div>
